@@ -1,0 +1,10 @@
+#!/usr/bin/env bash
+
+mkdir -p data/ecdc/
+curl https://opendata.ecdc.europa.eu/covid19/casedistribution/csv -o data/ecdc/ecdc.csv
+
+mkdir -p data/jhu/
+jhu_base_url="https://raw.githubusercontent.com/CSSEGISandData/COVID-19/master/csse_covid_19_data/csse_covid_19_time_series"
+for subset in confirmed recovered deaths; do
+  curl ${jhu_base_url}/time_series_covid19_${subset}_global.csv -o data/jhu/time_series_covid19_${subset}_global.csv
+fi

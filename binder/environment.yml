@@ -1,0 +1,21 @@
+name: py3
+channels:
+  - conda-forge
+dependencies:
+  - python=3
+  - basemap
+  - bokeh
+  - cartopy
+  - curl
+  - geoviews
+  - holoviews
+  - hvplot
+  - matplotlib<3
+  - netCDF4
+  - nodejs=8.9
+  - numpy
+  - pandas
+  - pip
+  - requests
+  - scipy
+  - seaborn
