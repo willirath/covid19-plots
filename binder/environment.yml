@@ -8,11 +8,10 @@ dependencies:
   - cartopy
   - curl
   - geoviews
+  - gvplot
   - holoviews
   - hvplot
-  - matplotlib<3
   - netCDF4
-  - nodejs=8.9
   - numpy
   - pandas
   - pip
