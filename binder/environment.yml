@@ -8,7 +8,6 @@ dependencies:
   - cartopy
   - curl
   - geoviews
-  - gvplot
   - holoviews
   - hvplot
   - netCDF4
